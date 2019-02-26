@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Hello World!</title>
+  </head>
+  <body>
+    <div id="app">
+        <div id="imap-form" style="display: none;">
+            <h1>Email Downloader</h1>
+            <h3>IMAP Settings:</h3>
+            <div>
+              User Name: <input type="text" name="name" id="uniqueID" value=""/>
+            </div>
+            <div>
+              Password: <input type="text" name="plainpassword" id="plainpassword" value=""/>
+            </div>
+            <div>
+              Host: <input type="text" name="host" id="host" value=""/>
+            </div>
+            <div>
+              Port: <input type="text" name="port" id="port" value=""/>
+            </div>
+            <div>
+              TLS: <input type="text" name="tls" id="tls" value=""/>
+            </div>
+
+            <button id="btnSubmit"> CONFIRM </button>
+            
+            <button id="btnBoxes" style="display: none;">Get Box List</button>
+            <div id="main-window"></div>
+        </div>
+        
+    </div>
+
+  </body>
+  <script>
+    require('./app/app.js')
+  </script>
+</html>
